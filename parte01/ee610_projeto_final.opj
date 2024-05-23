@@ -36,7 +36,6 @@
     (ANNOTATE_Property_Combine "{Value}{Source Package}"))
   (Folder "Outputs")
   (Folder "PSpice Resources"
-    (Folder "Model Libraries")
     (Folder "Stimulus Files")
     (Folder "Include Files")
     (Folder "Simulation Profiles"
@@ -44,7 +43,13 @@
       (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
          ".\ee610_projeto_final-pspicefiles\schematic1\bias.sim"
         (DisplayName "SCHEMATIC1-bias")
-        (Type "PSpice Profile"))))
+        (Type "PSpice Profile")))
+    (Folder "Model Libraries"
+      (File ".\ee610_projeto_final-pspicefiles\ee610_projeto_final.lib"
+        (DisplayName
+           ".\ee610_projeto_final-pspicefiles\ee610_projeto_final.lib")
+        (Type "PSpiceLibrary"))
+      (Sort User)))
   (DefaultLibraryBrowseDirectory "library\PSpice")
   (PartMRUSelector
     (R
@@ -68,4 +73,4 @@
       (LibraryName "..\..\LIBRARY\PSPICE\SOURCE.OLB")
       (DeviceIndex "0")))
   (LastUsedLibraryBrowseDirectory "LIBRARY\PSPICE")
-  (MPSSessionName "cadence")
+  (MPSSessionName "cadence"))
