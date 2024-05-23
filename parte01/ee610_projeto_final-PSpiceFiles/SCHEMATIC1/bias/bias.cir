@@ -1,4 +1,4 @@
-** Profile: "SCHEMATIC1-bias"  [ C:\Users\jfcmp\Documentos\Git\EE610 Projeto Final\parte01\ee610_projeto_final-pspicefiles\schematic1\bias.sim ] 
+** Profile: "SCHEMATIC1-bias"  [ c:\users\jfcmp\documentos\git\ee610 projeto final\parte01\ee610_projeto_final-pspicefiles\schematic1\bias.sim ] 
 
 ** Creating circuit file "bias.cir" 
 ** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
@@ -11,7 +11,7 @@
 .lib "nomd.lib" 
 
 *Analysis directives: 
-.DC LIN V_VI 0 3 0.01 
+.TRAN  0 50n 0 0.001n 
 .OPTIONS ADVCONV
 .PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
 .INC "..\SCHEMATIC1.net" 

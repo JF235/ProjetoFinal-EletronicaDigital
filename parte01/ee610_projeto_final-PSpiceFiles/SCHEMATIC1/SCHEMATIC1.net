@@ -2,5 +2,7 @@
 M_M1         N14371 N14375 0 0 MNINV1           
 M_M2         N14371 N14375 N14436 N14436 MPINV1           
 V_V1         N14436 0 3V
-V_VI         N14375 0 0Vdc
+V_VI         N14375 N15149 0Vdc
 C_C1         N14371 0  155f  TC=0,0 
+V_V2         N15149 0  
++PULSE 0 3 10n 0 0 10n 20n
