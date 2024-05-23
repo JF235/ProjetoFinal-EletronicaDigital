@@ -1,0 +1,6 @@
+.model MPINV1 PMOS 
+KP = 250u
+VTO = -0.6
+W= 2u
+L=0.35u 
+*$

@@ -1,0 +1,6 @@
+.model MNINV1 NMOS 
+KP = 500u
+VTO = 0.6
+W= 1u
+L=0.35u 
+*$
