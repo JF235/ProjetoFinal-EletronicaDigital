@@ -34,14 +34,30 @@
     (ANNOTATE_Reset_References_to_1 "FALSE")
     (ANNOTATE_No_Page_Number_Change "TRUE")
     (ANNOTATE_Property_Combine "{Value}{Source Package}")
-    (PSPICE_Regenerate_Netlist_Flag "TRUE")
+    (PSPICE_Regenerate_Netlist_Flag "FALSE")
     (RootChangedForceReNetlist "x"))
   (Folder "Outputs"
     (File ".\ee610_projeto_final-pspicefiles\schematic1\schematic1.net"
+      (Type "Report"))
+    (File ".\ee610_projeto_final-pspicefiles\latch\latch.net"
       (Type "Report")))
   (Folder "PSpice Resources"
-    (Folder "Stimulus Files")
-    (Folder "Include Files")
+    (Folder "Model Libraries"
+      (Sort User)
+      (File ".\ee610_projeto_final-pspicefiles\ee610_projeto_final.lib"
+        (Type "PSpiceLibrary")
+        (DisplayName
+           ".\ee610_projeto_final-pspicefiles\ee610_projeto_final.lib"))
+      (File ".\ee610_projeto_final-pspicefiles\pinv.lib"
+        (Type "PSpiceLibrary")
+        (DisplayName ".\ee610_projeto_final-pspicefiles\pinv.lib"))
+      (File ".\ee610_projeto_final-pspicefiles\ninv.lib"
+        (Type "PSpiceLibrary")
+        (DisplayName ".\ee610_projeto_final-pspicefiles\ninv.lib")))
+    (Folder "Stimulus Files"
+      (Sort User))
+    (Folder "Include Files"
+      (Sort User))
     (Folder "Simulation Profiles"
       (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
          ".\ee610_projeto_final-pspicefiles\schematic1\bias.sim"
@@ -50,19 +66,12 @@
       (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
          ".\ee610_projeto_final-pspicefiles\schematic1\latch.sim"
         (DisplayName "SCHEMATIC1-Latch")
-        (Type "PSpice Profile")))
-    (Folder "Model Libraries"
-      (File ".\ee610_projeto_final-pspicefiles\ee610_projeto_final.lib"
-        (DisplayName
-           ".\ee610_projeto_final-pspicefiles\ee610_projeto_final.lib")
-        (Type "PSpiceLibrary"))
-      (File ".\ee610_projeto_final-pspicefiles\pinv.lib"
-        (DisplayName ".\ee610_projeto_final-pspicefiles\pinv.lib")
-        (Type "PSpiceLibrary"))
-      (File ".\ee610_projeto_final-pspicefiles\ninv.lib"
-        (DisplayName ".\ee610_projeto_final-pspicefiles\ninv.lib")
-        (Type "PSpiceLibrary"))
-      (Sort User)))
+        (Type "PSpice Profile"))
+      (ActiveProfile ".\ee610_projeto_final-pspicefiles\latch\latch.sim")
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\ee610_projeto_final-pspicefiles\latch\latch.sim"
+        (DisplayName "Latch-Latch")
+        (Type "PSpice Profile"))))
   (DefaultLibraryBrowseDirectory "library\PSpice")
   (PartMRUSelector
     (MbreakN3
@@ -124,7 +133,7 @@
       (Path "Outputs")
       (Select "Design Resources"
          "c:\users\jfcmp\documentos\git\ee610 projeto final\parte01\ee610_projeto_final.dsn"
-         "Latch"))
+         "Latch" "LATCH"))
     (HierarchyView)
     (Doc
       (Type "COrCapturePMDoc")

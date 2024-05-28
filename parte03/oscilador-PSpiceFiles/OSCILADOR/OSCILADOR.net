@@ -1,0 +1,17 @@
+* source OSCILADOR
+C_C2         0 N17610  155f  TC=0,0 
+M_M8         N17610 N17594 VDD VDD Mbreakp           
+M_M7         N17610 N17594 0 0 Mbreakn           
+V_V1         VDD 0 7
+M_M10         N17594 N18287 0 0 Mbreakn           
+M_M9         N17594 N18287 VDD VDD Mbreakp           
+C_C3         0 N17594  155f  TC=0,0 
+C_C5         0 N18697  155f  TC=0,0 
+M_M12         N18697 N18673 VDD VDD Mbreakp           
+C_C4         0 N18673  155f  TC=0,0 
+M_M14         N18697 N18673 0 0 Mbreakn           
+M_M11         N18673 N17610 VDD VDD Mbreakp           
+M_M13         N18673 N17610 0 0 Mbreakn           
+C_C7         0 N18287  155f  TC=0,0 
+M_M18         N18287 N18697 0 0 Mbreakn           
+M_M16         N18287 N18697 VDD VDD Mbreakp           
