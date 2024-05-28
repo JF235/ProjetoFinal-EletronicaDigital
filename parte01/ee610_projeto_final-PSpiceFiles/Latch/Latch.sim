@@ -1,23 +1,23 @@
 @OrCAD Simulation Server Version: 1.0
 
-@Settings: 1 1
+@Settings: 0 1
 @General:
-ProfileName= "bias" 
-ProfileFile= "bias.sim" 
-Connectivity= "SCHEMATIC1.net" 
-NetlistFile= "bias.cir" 
-DataFile= "bias.dat" 
-OutFile= "bias.out" 
+ProfileName= "Latch" 
+ProfileFile= "Latch.sim" 
+Connectivity= "Latch.net" 
+NetlistFile= "Latch.cir" 
+DataFile= "Latch.dat" 
+OutFile= "Latch.out" 
 Notes=
 @#$BEGINNOTES
 @#$ENDNOTES
 @End General
-@Analysis: 0 0
+@Analysis: 0 1
 +0 0 0 0 
-+0 "50n" 
++0 "2ns" 
 +1 "" 
 +2 "0" 
-+3 "0.001n" 
++3 "0.004ns" 
 +4 "" 
 +5 "" 
 +6 "" 
@@ -31,7 +31,7 @@ Notes=
 +4 "" 
 +5 "" 
 @End Analysis
-@Analysis: 2 1
+@Analysis: 2 0
 +0 0
 +0 "V3" 
 +1 "" 
@@ -43,13 +43,13 @@ Notes=
 +7 "" 
 @End Analysis
 @Analysis: 3 0
-+1 0 0
++0 0 0
 +0 "" 
 +1 "" 
 +2 "" 
 @End Analysis
 @Analysis: 4 0
-+0 0 1 0 0 0 1 0 0 0 1
++0 0 1 0 0 0 0 0 0 0 1
 +0 "" 
 +1 "" 
 +2 "" 

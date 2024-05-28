@@ -1,0 +1,8 @@
+* source EE610_PROJETO_FINAL
+M_M8         N17343 N17335 N17255 N17255 Mbreakp           
+M_M4         N17335 N17343 N17255 N17255 Mbreakp           
+M_M6         N17335 N17343 0 0 Mbreakn           
+V_V4         N17255 0 3
+C_C3         0 N17335  155f  TC=0,0 
+M_M7         N17343 N17335 0 0 Mbreakn           
+C_C2         0 N17343  155f  TC=0,0 

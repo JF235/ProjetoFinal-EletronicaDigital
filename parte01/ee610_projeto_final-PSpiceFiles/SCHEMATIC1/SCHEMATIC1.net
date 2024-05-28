@@ -1,8 +1,15 @@
 * source EE610_PROJETO_FINAL
-M_M1         N14371 N14375 0 0 MNINV1           
-M_M2         N14371 N14375 N14436 N14436 MPINV1           
+M_M1          N14371 N14375 0 MNINV1           
 V_V1         N14436 0 3V
 V_VI         N14375 N15149 0Vdc
 C_C1         N14371 0  155f  TC=0,0 
 V_V2         N15149 0  
 +PULSE 0 3 10n 0 0 10n 20n
+C_C2         0 N15903  155f  TC=0,0 
+V_V3         N15747 0 0Vdc
+V_V4         N15855 0 3
+C_C3         0 N16091  155f  TC=0,0 
+M_M4         N16091 N15903 N15855 N15855 Mbreakp           
+M_M6         N16091 N15903 0 0 Mbreakn           
+M_M7         N15903 N15747 0 0 Mbreakn           
+M_M8         N15903 N15747 N15855 N15855 Mbreakp           

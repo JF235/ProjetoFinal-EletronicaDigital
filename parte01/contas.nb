@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[      7736,        218]
-NotebookOptionsPosition[      6059,        185]
-NotebookOutlinePosition[      6469,        201]
-CellTagsIndexPosition[      6426,        198]
+NotebookDataLength[      8113,        228]
+NotebookOptionsPosition[      6343,        194]
+NotebookOutlinePosition[      6753,        210]
+CellTagsIndexPosition[      6710,        207]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -181,7 +181,16 @@ Cell[BoxData[{
   3.925485940584624*^9, 3.9254859562237167`*^9}, {3.925486177413515*^9, 
   3.925486203619521*^9}, {3.9254862446741314`*^9, 
   3.9254862506913652`*^9}},ExpressionUUID->"a20f4637-7d09-4532-a235-\
-020db85b1bd3"]
+020db85b1bd3"],
+
+Cell[BoxData[
+ RowBox[{"(*", " ", 
+  RowBox[{
+   RowBox[{"tp", " ", "do", " ", "latch"}], " ", "=", " ", 
+   RowBox[{"78", "ps"}]}], " ", "*)"}]], "Input",
+ CellChangeTimes->{{3.925915233884356*^9, 
+  3.925915256437724*^9}},ExpressionUUID->"a091a5ca-3a7d-4264-977f-\
+1223e02b152a"]
 },
 WindowSize->{569.25, 450.75},
 WindowMargins->{{221.25, Automatic}, {25.5, Automatic}},
@@ -219,7 +228,8 @@ Cell[4616, 142, 181, 3, 32, "Output",ExpressionUUID->"e26ae5c9-c4ea-4b40-92c4-71
 Cell[4800, 147, 186, 3, 32, "Output",ExpressionUUID->"ae4dfe2b-8e76-4926-a341-614aa015f86b"],
 Cell[4989, 152, 186, 3, 32, "Output",ExpressionUUID->"dbb5539d-d51f-42fa-875d-4f7dce83e335"]
 }, Open  ]],
-Cell[5190, 158, 865, 25, 86, "Input",ExpressionUUID->"a20f4637-7d09-4532-a235-020db85b1bd3"]
+Cell[5190, 158, 865, 25, 86, "Input",ExpressionUUID->"a20f4637-7d09-4532-a235-020db85b1bd3"],
+Cell[6058, 185, 281, 7, 28, "Input",ExpressionUUID->"a091a5ca-3a7d-4264-977f-1223e02b152a"]
 }
 ]
 *)
