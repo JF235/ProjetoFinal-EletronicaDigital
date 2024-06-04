@@ -1,0 +1,147 @@
+
+**** 06/04/24 17:21:45 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-bias"  [ C:\Users\jfcmp\Documentos\Git\EE610 Projeto Final\parte04\flipflop-pspicefiles\schematic1\bias.sim 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "bias.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "../../../flipflop-pspicefiles/flipflop.lib" 
+* From [PSPICE NETLIST] section of C:\Users\jfcmp\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.TRAN  0 50ns 0 5p 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source FLIPFLOP
+M_M1         N14999 N14408 0 0 NMOSInv           
+M_M2         N14999 N14408 N14872 N14872 PMOSInv           
+C_C1         0 N14999  155f  TC=0,0 
+V_V1         N14872 0 3
+M_M3         N14999 N14872 N14995 N14995 NMOSclock           
+M_M4         N14995 N15201 0 0 NMOSclock           
+V_V3         N15201 0  
++PULSE 0 3 0 0 0 10n 20n
+M_M6         N14408 N14999 0 0 NMOSInv           
+M_M7         N14408 N14872 N15522 N15522 NMOSclock           
+V_V4         N15552 0  
++PULSE 0 3 10n 0 0 10n 20n
+M_M8         N15522 N15552 0 0 NMOSclock           
+C_C2         0 N14408  155f  TC=0,0 
+M_M5         N14408 N14999 N14872 N14872 PMOSInv           
+
+**** RESUMING bias.cir ****
+.END
+
+**** 06/04/24 17:21:45 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-bias"  [ C:\Users\jfcmp\Documentos\Git\EE610 Projeto Final\parte04\flipflop-pspicefiles\schematic1\bias.sim 
+
+
+ ****     MOSFET MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               NMOSInv         PMOSInv         NMOSclock       
+               NMOS            PMOS            NMOS            
+       LEVEL    1               1               1            
+           L  350.000000E-09  350.000000E-09  350.000000E-09 
+           W    2.590000E-06    5.180000E-06    7.634000E-06 
+         VTO     .6             -.6              .6          
+          KP  500.000000E-06  250.000000E-06  500.000000E-06 
+       GAMMA    0               0               0            
+         PHI     .6              .6              .6          
+      LAMBDA    0               0               0            
+          IS   10.000000E-15   10.000000E-15   10.000000E-15 
+          JS    0               0               0            
+          PB     .8              .8              .8          
+        PBSW     .8              .8              .8          
+          CJ    0               0               0            
+        CJSW    0               0               0            
+        CGSO    0               0               0            
+        CGDO    0               0               0            
+        CGBO    0               0               0            
+         TOX    0               0               0            
+          XJ    0               0               0            
+       UCRIT   10.000000E+03   10.000000E+03   10.000000E+03 
+      DIOMOD    1               1               1            
+         VFB    0               0               0            
+        LETA    0               0               0            
+        WETA    0               0               0            
+          U0    0               0               0            
+        TEMP    0               0               0            
+         VDD    5               5               5            
+       XPART    0               0               0            
+
+
+**** 06/04/24 17:21:45 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-bias"  [ C:\Users\jfcmp\Documentos\Git\EE610 Projeto Final\parte04\flipflop-pspicefiles\schematic1\bias.sim 
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N14408)    1.5000 (N14872)    3.0000 (N14995)    1.5000 (N14999)    1.5000     
+
+(N15201)    0.0000 (N15522)    1.5000 (N15552)    0.0000 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -2.997E-03
+    V_V3         0.000E+00
+    V_V4         0.000E+00
+
+    TOTAL POWER DISSIPATION   8.99E-03  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 06/04/24 17:21:45 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-bias"  [ C:\Users\jfcmp\Documentos\Git\EE610 Projeto Final\parte04\flipflop-pspicefiles\schematic1\bias.sim 
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .25
+

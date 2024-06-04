@@ -1,0 +1,16 @@
+* source FLIPFLOP
+M_M1         N14999 N14408 0 0 NMOSInv           
+M_M2         N14999 N14408 N14872 N14872 PMOSInv           
+C_C1         0 N14999  155f  TC=0,0 
+V_V1         N14872 0 3
+M_M3         N14999 N14872 N14995 N14995 NMOSclock           
+M_M4         N14995 N15201 0 0 NMOSclock           
+V_V3         N15201 0  
++PULSE 0 3 0 0 0 10n 20n
+M_M6         N14408 N14999 0 0 NMOSInv           
+M_M7         N14408 N14872 N15522 N15522 NMOSclock           
+V_V4         N15552 0  
++PULSE 0 3 10n 0 0 10n 20n
+M_M8         N15522 N15552 0 0 NMOSclock           
+C_C2         0 N14408  155f  TC=0,0 
+M_M5         N14408 N14999 N14872 N14872 PMOSInv           
