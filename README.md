@@ -1,5 +1,9 @@
 # Projeto Final - Eletrônica Digital I (EE610)
 
+> João Felipe Contreras de Moraes (174140)
+>
+> Artur Paulos Pinheiro (246955)
+
 ## Inversor CMOS
 
 **a)** A condição do inversor casado é dada por
