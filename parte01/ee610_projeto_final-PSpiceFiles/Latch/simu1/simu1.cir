@@ -1,0 +1,22 @@
+** Profile: "Latch-simu1"  [ C:\Users\jfcmp\Documentos\Git\EE610 Projeto Final\parte01\ee610_projeto_final-PSpiceFiles\Latch\simu1.sim ] 
+
+** Creating circuit file "simu1.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "../../../ee610_projeto_final-pspicefiles/ee610_projeto_final.lib" 
+.LIB "../../../ee610_projeto_final-pspicefiles/pinv.lib" 
+.LIB "../../../ee610_projeto_final-pspicefiles/ninv.lib" 
+* From [PSPICE NETLIST] section of C:\Users\jfcmp\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.TRAN  0 2ns 0 2ps 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\Latch.net" 
+
+
+.END

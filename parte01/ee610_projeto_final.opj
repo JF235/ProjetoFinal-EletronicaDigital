@@ -67,27 +67,44 @@
          ".\ee610_projeto_final-pspicefiles\schematic1\latch.sim"
         (DisplayName "SCHEMATIC1-Latch")
         (Type "PSpice Profile"))
-      (ActiveProfile ".\ee610_projeto_final-pspicefiles\latch\latch.sim")
       (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
          ".\ee610_projeto_final-pspicefiles\latch\latch.sim"
         (DisplayName "Latch-Latch")
+        (Type "PSpice Profile"))
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\ee610_projeto_final-pspicefiles\latch\inversor.sim"
+        (DisplayName "Latch-inversor")
+        (Type "PSpice Profile"))
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\ee610_projeto_final-pspicefiles\schematic1\inversor.sim"
+        (DisplayName "SCHEMATIC1-inversor")
+        (Type "PSpice Profile"))
+      (ActiveProfile ".\ee610_projeto_final-pspicefiles\latch\simu1.sim")
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\ee610_projeto_final-pspicefiles\latch\simu1.sim"
+        (DisplayName "Latch-simu1")
         (Type "PSpice Profile"))))
   (DefaultLibraryBrowseDirectory "library\PSpice")
   (PartMRUSelector
-    (MbreakN3
-      (FullPartName "MbreakN3.Normal")
+    (VDC
+      (FullPartName "VDC.Normal")
       (LibraryName
-         "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\PSPICE\BREAKOUT.OLB")
+         "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (VPULSE
+      (FullPartName "VPULSE.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
       (DeviceIndex "0"))
     (MbreakP3
       (FullPartName "MbreakP3.Normal")
       (LibraryName
          "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\PSPICE\BREAKOUT.OLB")
       (DeviceIndex "0"))
-    (VDC
-      (FullPartName "VDC.Normal")
+    (MbreakN3
+      (FullPartName "MbreakN3.Normal")
       (LibraryName
-         "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+         "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\PSPICE\BREAKOUT.OLB")
       (DeviceIndex "0"))
     (0
       (LibraryName "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
@@ -99,11 +116,6 @@
       (FullPartName "C.Normal")
       (LibraryName
          "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
-      (DeviceIndex "0"))
-    (VPULSE
-      (FullPartName "VPULSE.Normal")
-      (LibraryName
-         "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
       (DeviceIndex "0"))
     (R
       (FullPartName "R.Normal")
@@ -123,16 +135,13 @@
     (FileView
       (Path "Design Resources")
       (Path "Design Resources"
-         "c:\users\jfcmp\documentos\git\ee610 projeto final\parte01\ee610_projeto_final.dsn")
+         "C:\Users\jfcmp\Documentos\Git\EE610 Projeto Final\parte01\ee610_projeto_final.dsn")
       (Path "Design Resources"
-         "c:\users\jfcmp\documentos\git\ee610 projeto final\parte01\ee610_projeto_final.dsn"
+         "C:\Users\jfcmp\Documentos\Git\EE610 Projeto Final\parte01\ee610_projeto_final.dsn"
          "Latch")
-      (Path "Design Resources"
-         "c:\users\jfcmp\documentos\git\ee610 projeto final\parte01\ee610_projeto_final.dsn"
-         "SCHEMATIC1")
       (Path "Outputs")
       (Select "Design Resources"
-         "c:\users\jfcmp\documentos\git\ee610 projeto final\parte01\ee610_projeto_final.dsn"
+         "C:\Users\jfcmp\Documentos\Git\EE610 Projeto Final\parte01\ee610_projeto_final.dsn"
          "Latch" "LATCH"))
     (HierarchyView)
     (Doc

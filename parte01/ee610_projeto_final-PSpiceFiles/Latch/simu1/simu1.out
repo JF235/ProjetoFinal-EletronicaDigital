@@ -1,0 +1,137 @@
+
+**** 06/18/24 16:18:22 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "Latch-simu1"  [ C:\Users\jfcmp\Documentos\Git\EE610 Projeto Final\parte01\ee610_projeto_final-PSpiceFiles\Latch\simu1.s
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "simu1.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "../../../ee610_projeto_final-pspicefiles/ee610_projeto_final.lib" 
+.LIB "../../../ee610_projeto_final-pspicefiles/pinv.lib" 
+.LIB "../../../ee610_projeto_final-pspicefiles/ninv.lib" 
+* From [PSPICE NETLIST] section of C:\Users\jfcmp\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.TRAN  0 2ns 0 2ps 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\Latch.net" 
+
+
+
+**** INCLUDING Latch.net ****
+* source EE610_PROJETO_FINAL
+M_M8         N17343 N17335 N17255 N17255 Mbreakp           
+M_M4         N17335 N17343 N17255 N17255 Mbreakp           
+M_M6         N17335 N17343 0 0 Mbreakn           
+V_V4         N17255 0 3
+C_C3         0 N17335  155f  TC=0,0 
+M_M7         N17343 N17335 0 0 Mbreakn           
+C_C2         0 N17343  155f  TC=0,0 
+
+**** RESUMING simu1.cir ****
+.END
+
+**** 06/18/24 16:18:22 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "Latch-simu1"  [ C:\Users\jfcmp\Documentos\Git\EE610 Projeto Final\parte01\ee610_projeto_final-PSpiceFiles\Latch\simu1.s
+
+
+ ****     MOSFET MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               Mbreakp         Mbreakn         
+               PMOS            NMOS            
+       LEVEL    1               1            
+           L  350.000000E-09  350.000000E-09 
+           W    5.180000E-06    2.590000E-06 
+         VTO    -.6              .6          
+          KP  250.000000E-06  500.000000E-06 
+       GAMMA    0               0            
+         PHI     .6              .6          
+      LAMBDA    0               0            
+          IS   10.000000E-15   10.000000E-15 
+          JS    0               0            
+          PB     .8              .8          
+        PBSW     .8              .8          
+          CJ    0               0            
+        CJSW    0               0            
+        CGSO    0               0            
+        CGDO    0               0            
+        CGBO    0               0            
+         TOX    0               0            
+          XJ    0               0            
+       UCRIT   10.000000E+03   10.000000E+03 
+      DIOMOD    1               1            
+         VFB    0               0            
+        LETA    0               0            
+        WETA    0               0            
+          U0    0               0            
+        TEMP    0               0            
+         VDD    5               5            
+       XPART    0               0            
+
+
+**** 06/18/24 16:18:22 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "Latch-simu1"  [ C:\Users\jfcmp\Documentos\Git\EE610 Projeto Final\parte01\ee610_projeto_final-PSpiceFiles\Latch\simu1.s
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N17255)    3.0000 (N17335)    1.5000 (N17343)    1.5000 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V4        -2.997E-03
+
+    TOTAL POWER DISSIPATION   8.99E-03  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 06/18/24 16:18:22 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "Latch-simu1"  [ C:\Users\jfcmp\Documentos\Git\EE610 Projeto Final\parte01\ee610_projeto_final-PSpiceFiles\Latch\simu1.s
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .05
+

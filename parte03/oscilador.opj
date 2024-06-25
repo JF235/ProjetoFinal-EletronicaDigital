@@ -39,21 +39,19 @@
     (File ".\oscilador-pspicefiles\oscilador\oscilador.net"
       (Type "Report")))
   (Folder "PSpice Resources"
-    (Folder "Model Libraries"
-      (Sort User)
-      (File ".\oscilador-pspicefiles\oscilador.lib"
-        (Type "PSpiceLibrary")
-        (DisplayName ".\oscilador-pspicefiles\oscilador.lib")))
-    (Folder "Stimulus Files"
-      (Sort User))
-    (Folder "Include Files"
-      (Sort User))
+    (Folder "Stimulus Files")
+    (Folder "Include Files")
     (Folder "Simulation Profiles"
       (ActiveProfile ".\oscilador-pspicefiles\oscilador\bias.sim")
       (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
          ".\oscilador-pspicefiles\oscilador\bias.sim"
         (DisplayName "OSCILADOR-bias")
-        (Type "PSpice Profile"))))
+        (Type "PSpice Profile")))
+    (Folder "Model Libraries"
+      (File ".\oscilador-pspicefiles\oscilador.lib"
+        (DisplayName ".\oscilador-pspicefiles\oscilador.lib")
+        (Type "PSpiceLibrary"))
+      (Sort User)))
   (DefaultLibraryBrowseDirectory "library\PSpice")
   (PartMRUSelector
     (VDC

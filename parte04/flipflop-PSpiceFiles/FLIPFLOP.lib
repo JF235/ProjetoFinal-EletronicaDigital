@@ -1,6 +1,6 @@
 * PSpice Model Editor - Version 17.2.0
 *$
-.model NMOSclock NMOS KP=500u VTO=0.6 W=7.634u L=0.35u
+.model NMOSclock NMOS KP=500u VTO=0.6 W=7.7u L=0.35u
 *$
 .model NMOSInv NMOS KP=500u VTO=0.6 W=2.59u L=0.35u
 *$
