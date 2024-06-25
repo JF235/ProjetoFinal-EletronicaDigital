@@ -50,7 +50,7 @@ A curva da corrente confirma os requisitos de valor mínimo maior que $1\ \text{
 
 > Curva da corrente, mostrando o valor de $1.5$ mA na saturação.
 
-\item Para o inversor CMOS vale que $V_{OL}=0$ e $V_{IL}=V_{DD}=3V$. Os valores de $V_{OH}, V_{IH}, MR_{H}\ \text{e}\ MR_L$ podem ser calculados das seguintes maneiras:
+\item Para o inversor CMOS vale que $V_{OL}=0$ e $V_{OH}=V_{DD}=3V$. Os valores de $V_{OH}, V_{IH}, MR_{H}\ \text{e}\ MR_L$ podem ser calculados das seguintes maneiras:
 
 $$\begin{align*}
     V_{IH}=\frac{1}{8}(5V_{DD}-2V_t)=&1.725\ \text{V}\\
@@ -78,6 +78,12 @@ $$
 t_{phl} = t_{plh} = 23\ \text{ps}$$
 $$t_{r} = t_{f} = 51\ \text{ps}$$
 $$2t_p = t_{phl} + t_{plh} = 46\ \text{ps}$$
+
+Que estão de acordo com os tempos calculados usando as aproximações feitas em aula,
+
+$$\begin{equation}
+    t_{phl} = t_{plh} = \frac{1.7 C}{k'(W/L)V_{DD}} = 23.7\ \text{ps}
+\end{equation}$$
 
 ## Latch
 
@@ -263,3 +269,9 @@ $S$ | $R$ | $Q_{n+1}$
 0 | 1 | 0
 1 | 0 | 1
 1 | 1 | $\times$
+
+Na \cref{fig:ff_tempinho}, foi feita a simulação temporal com largura de pulso de clock mínimo, calculado no item 4b).
+
+![](imgs/ff_tempinho.png)
+
+> Pulsos de Set e Reset com largura  $T_\text{set} = 185\ \text{ps}$.
